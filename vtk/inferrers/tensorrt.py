@@ -1,30 +1,33 @@
 from .base import BaseInferrer
 import tensorflow as tf
+import tensorflow.contrib.tensorrt as trt
 import numpy as np
 import os
 
-class TensorFlowInferrer(BaseInferrer):
+class TensorRTInferrer(BaseInferrer):
 	"""
-	Run inference on a graph using plain TensorFlow. Use this if you don't have TensorRT, are using an AMD GPU, do not want to use TensorRT, or want to run inference exclusively on the CPU (not recommended).
+	Run inference on a graph using NVIDIA TensorRT optimizations. Use this if you have an NVIDIA GPU and a TensorFlow binary with TensorRT support to accelerate inference time to almost real time.
 	"""
-	def __init__(self, graph: str):
+	def __init__(self, graph: str, precision: str = "int8"):
 		os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
 		self.graphdef = tf.GraphDef()
 		self.session = tf.Session()
+		self.precision = precision
 		with self.session.graph.as_default():
 			with open(graph, "rb") as f:
 				self.graphdef.ParseFromString(f.read())
+				self.trt_graph = trt.create_inference_graph(
+					input_graph=self.graphdef,
+					outputs=["num_detections:0", "detection_scores:0", "detection_boxes:0", "detection_classes:0"],
+					precision=self.precision
+				)
 				tf.import_graph_def(self.graphdef, name="")
 		super().__init__()
 	def prepare(self):
 		"""
-		Prepare the model for inference. This loads the model into memory, if not already completed.
+		Prepare the model from the inference. This loads the model into memory, if not already completed.
 		"""
-		pass
-	def run(self, image: np.ndarray, threshold: float = 0.8):
-		"""
-		Run inference on an image.
-		"""
+	def run(self, image: np.ndarray, precision: float = 0.8):
 		with self.session.as_default():
 			self.out = self.session.run([
 				self.session.graph.get_tensor_by_name("num_detections:0"),
