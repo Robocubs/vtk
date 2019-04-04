@@ -16,12 +16,12 @@ class TensorFlowInferrer(BaseInferrer):
 				self.graphdef.ParseFromString(f.read())
 				tf.import_graph_def(self.graphdef, name="")
 		super().__init__()
-	def prepare(self):
+	def prepare(self) -> None:
 		"""
 		Prepare the model for inference. This loads the model into memory, if not already completed.
 		"""
 		pass
-	def run(self, image: np.ndarray, threshold: float = 0.8):
+	def run(self, image: np.ndarray, threshold: float = 0.8) -> dict:
 		"""
 		Run inference on an image.
 		"""

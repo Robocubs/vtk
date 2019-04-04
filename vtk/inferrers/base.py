@@ -14,14 +14,14 @@ class BaseInferrer(ABC):
 		super().__init__()
 
 	@abstractmethod
-	def prepare(self):
+	def prepare(self) -> None:
 		"""
 		Prepare the model for running inference. TensorFlow and Tensorflow with TensorRT load graph files and create pointers to loaded graphs for inference, and OpenCV with DNN loads graph and graph descriptor for inference.
 		"""
 		pass
 
 	@abstractmethod
-	def run(self, image: np.ndarray, threshold: float = None, draw: bool = None):
+	def run(self, image: np.ndarray, threshold: float = None) -> dict:
 		"""
 		Run inference on a frame. Pretty much self explanitory.
 		"""
