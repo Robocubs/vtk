@@ -8,7 +8,7 @@ os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
 cprint("[0/6] Capturing frame...", "green", attrs=["bold"])
 status, frame = cv2.VideoCapture(0).read()
 cprint("[1/6] Loading graph into inference class...", "green", attrs=["bold"])
-inferrer = TensorFlowInferrer("../vision/frozen_inference_graph.pb")
+inferrer = TensorFlowInferrer("tests/testdata/models/frozen_inference_graph.pb")
 cprint("[2/6] Preparing graph in memory...", "green", attrs=["bold"])
 inferrer.prepare()
 cprint("[3/6] Running inference on frame...", "green", attrs=["bold"])
