@@ -1,5 +1,6 @@
 from vtk.preprocessors.cuda import CudaPreprocessor
-import cv2, unittest
+import cv2
+import unittest
 from tensorflow import test as tftest
 import numpy as np
 import os
@@ -53,6 +54,7 @@ def recolor_helper(handle, name: str):
                 handle.assertTrue(True)  # Definitely true.
     else:
         handle.fail("Something went wrong. Check the conversion from cv2.cuda_GpuMat to np.ndarray.")
+
 
 @unittest.skipIf(is_gpu_available, gpu_unavailable_message)
 class CudaPreprocessorTest(unittest.TestCase):

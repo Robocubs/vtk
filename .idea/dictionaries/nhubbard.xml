@@ -4,6 +4,8 @@
       <w>cuda</w>
       <w>cvtcolor</w>
       <w>hacky</w>
+      <w>inferrer</w>
+      <w>ndarray</w>
       <w>preproc</w>
       <w>resized</w>
       <w>testdata</w>
