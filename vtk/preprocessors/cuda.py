@@ -14,10 +14,10 @@ class CudaPreprocessor(BasePreprocessor):
         """
         Resize the given image to a specific width and height.
         """
-        return cv2.resize(self.mat, (width, height))
+        return cv2.resize(self.mat, (width, height)) # pragma: no cover
 
     def recolor(self, color_scheme: int) -> cv2.cuda_GpuMat:
         """
         Recolor an image to another color scheme.
         """
-        return cv2.cvtColor(self.mat, color_scheme)
+        return cv2.cvtColor(self.mat, color_scheme) # pragma: no cover
