@@ -2,6 +2,7 @@ from .base import BaseInferrer
 import numpy as np
 import cv2
 
+
 class OpenCVInferrer(BaseInferrer):
     """
     Run the object detection graph in OpenCV's built-in DNN module.
@@ -19,23 +20,27 @@ class OpenCVInferrer(BaseInferrer):
     @param descriptor Path to descriptor file.
     @param input_size Size of square image to provide to OpenCV.
     """
+
     def __init__(self, graph: str, descriptor: str, input_size: int = 300):
         self.graph = graph
         self.descriptor = descriptor
         self.input_size = input_size
         self.detections = []
+
     def prepare(self) -> None:
         """
         Prepare the model for inference. This loads the model into memory, if not already completed.
         """
         self.net = cv2.dnn.readNetFromTensorflow(self.graph, self.descriptor)
+
     def run(self, image: np.ndarray, threshold: float = 0.8) -> dict:
         """
         Run inference on an image.
         """
         rows = image.shape[0]
         cols = image.shape[1]
-        self.net.setInput(cv2.dnn.blobFromImage(image, size=(self.input_size, self.input_size), swapRB=True, crop=False))
+        self.net.setInput(
+            cv2.dnn.blobFromImage(image, size=(self.input_size, self.input_size), swapRB=True, crop=False))
         self.outs = self.net.forward()
         for detection in self.outs[0, 0, :, :]:
             score = float(detection[2])
