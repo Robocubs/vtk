@@ -27,13 +27,13 @@ class TensorRTInferrer(BaseInferrer):
                 tf.import_graph_def(self.graphdef, name="")
         super().__init__()
 
-    def prepare(self) -> None:
+    def prepare(self) -> None: #  pragma: no cover
         """
         Prepare the model from the inference. This loads the model into memory, if not already completed.
         """
         pass
 
-    def run(self, image: np.ndarray, precision: float = 0.8) -> dict:
+    def run(self, image: np.ndarray, precision: float = 0.8) -> dict: #  pragma: no cover
         with self.session.as_default():
             self.out = self.session.run([
                 self.session.graph.get_tensor_by_name("num_detections:0"),
