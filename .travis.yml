@@ -8,3 +8,5 @@ install:
   - pip install coverage
 script:
   - cd tests && coverage run --source=../vtk/ -m nose2
+notifications:
+  slack: 1701robocubs:7SLMoWn0v7ysfBEzmpheMEq9
