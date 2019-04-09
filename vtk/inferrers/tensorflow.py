@@ -3,10 +3,12 @@ import tensorflow as tf
 import numpy as np
 import os
 
+
 class TensorFlowInferrer(BaseInferrer):
     """
     Run inference on a graph using plain TensorFlow. Use this if you don't have TensorRT, are using an AMD GPU, do not want to use TensorRT, or want to run inference exclusively on the CPU (not recommended).
     """
+
     def __init__(self, graph: str):
         os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
         self.graphdef = tf.GraphDef()
@@ -16,11 +18,13 @@ class TensorFlowInferrer(BaseInferrer):
                 self.graphdef.ParseFromString(f.read())
                 tf.import_graph_def(self.graphdef, name="")
         super().__init__()
+
     def prepare(self) -> None:
         """
         Prepare the model for inference. This loads the model into memory, if not already completed.
         """
         pass
+
     def run(self, image: np.ndarray, threshold: float = 0.8) -> dict:
         """
         Run inference on an image.

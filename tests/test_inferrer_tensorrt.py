@@ -4,22 +4,18 @@ import cv2
 import numpy as np
 import unittest
 import os
-
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
 is_gpu_available = not tftest.is_gpu_available()
 gpu_unavailable_message = "CUDA is unavailable on this computer, skipping this test."
+inferrer = TensorRTInferrer("testdata/models/frozen_inference_graph.pb")
 
 
 def inference_helper(holder, image: np.ndarray):
-    inferrer = TensorRTInferrer("testdata/models/frozen_inference_graph.pb")
-    inferrer.prepare()
     result = inferrer.run(image)
     holder.assertGreaterEqual(result["num_detections"], 1)
 
 
 def inference_on_empty_image(holder):
-    inferrer = TensorRTInferrer("testdata/models/frozen_inference_graph.pb")
-    inferrer.prepare()
     with holder.assertRaises(ValueError):
         inferrer.run(np.zeros((300, 300), dtype=int))
 
