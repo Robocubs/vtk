@@ -1,4 +1,8 @@
 # VTK
+
+[![Build Status](https://travis-ci.com/Robocubs/vtk.svg?branch=master)](https://travis-ci.com/Robocubs/vtk)
+[![Coverage Status](https://coveralls.io/repos/github/Robocubs/vtk/badge.svg?branch=master)](https://coveralls.io/github/Robocubs/vtk?branch=master)
+
 An easy-to-use vision toolkit for working with SSD and SSD-Lite TensorFlow Object Detection models.
 
 ### Who?
