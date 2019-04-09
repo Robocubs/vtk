@@ -1,6 +1,6 @@
 language: python
 python:
-  - "3.6"
+  - '3.6'
 install:
   - pip install -r requirements.txt
   - pip install opencv-contrib-python==4.0.1.23
@@ -9,4 +9,8 @@ install:
 script:
   - cd tests && coverage run --source=../vtk/ -m nose2
 notifications:
-  slack: 1701robocubs:7SLMoWn0v7ysfBEzmpheMEq9
+  slack:
+    secure: n/zhlk8ILP4hG59NajxN0R4r+GfP/YXrmZS0UY37rhks24Qj7/DXxAApLiW3bAZA7aPkwWc1HEauZ0Vpj0BgA6gZGFhTkNZxg5ixIqhVaK5raQW5ZQ8KAzy3znhvNvHkGEBl0zwWj/WvPWoqtOJkJ0n0mGOVkQtNYYkkdo6YZWYpVI988Wr6xQJETEJPvVaD2/TWtymBVmwj5xWjJdVjnNeaDPeXKCGVl+Q+KpgEIoPuNL9hcGSEXmNRUhIwl/A+A727POtHVj0tnyf1Qu47x1VuxAi+2PjfAMhptqPM9oyWswn17jahJ8MS+1qS7xP04RpfZL2wMVrBgDijPibPxTW8rLp9lXA4n4mcol+4nYd4QoOa6xXfFOAywXi4+X1jrGXzRANvz8GuqgEB2p6mgvA8HNuo1yxtZxkmP57OU4GIsLQWADDQdtmlVdOoFhVEW7bTepac5pfWfSxeJONY7hS+J46KCEHodl4ACkX3fV3kDEdoQWFzU6RCYviRtSY3hiZmcV4K0PXhZMsPoCiAy0YQUMYpYtL9qjZ0+1tegx9AF0bKMUG+m2W6dDGwSwrT2ahESeTFAkWIXr9YNFR0y7AeAGZDJbQPT90HO/+yjZCH4exGYiKJVbwDMs09YVadURVMBPk9Gw1At+bhijFoOFGOCYZxHwyQT71hjvKnG0w=
+env:
+  global:
+    secure: rIavZKv2iYbdrZ8SBBVE+N+asvSKRZ8EKE8rZrOJ0i/koQ3M2uDU+N+zfLVwGhLZaJgJo+dbonqNGchpr1uvHD3bIZmNhwXQMGnEhi9YgfrcBwzOi7Lw3bLHBLsYJqB2njP9cRL9TTgTHYq+Levlxg+dJS31KMlvwudqjSGuiTZ44JwOAfBagnRFdp0sc+r6FoJMJSyLSNKQ7Y+9mZHVz5rhfE1hVlVgfCmcRet11/snSpgj7TFumz1sncufWhieP8amtVTLdpsIKwJc9JoTPS6rPmt2pNp9Gb2UrRbkL4eTJvHLiJu24bLkqfCA2S3TDUSwgsAYeRI4wZv3WOXuB0suAXBsLKaZw45OXrL+yb0Vt+bZjfd5Q3iYz7wj7JDLEsAX6t0LLWjGCEHVzsB71wheSDlm1oWt5oyKQ196OTih4tf/5PBvezcKCBgN56YGsGw/GcozYZGTy7pjDeiWWEuBN13s5V3wZaX50Y6xzgpimtQrSnN/eOaxwJmSwlouqoFeslU6f3c4kAQQyeiHB6uppairt+evH38/gp2yLrJHb59eMGQSq26ton6k5LojNtuZjPh/vKA+VJHXCNOakFGtCbVYu05iv6FytBEB0VyemxzAA9pDJepo8KrKqClEbpzgaw142I7D7QVx317EPKV2couvLFOXhfFJm6fLnhs=
