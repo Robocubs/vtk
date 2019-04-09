@@ -6,7 +6,7 @@ install:
   - pip install opencv-contrib-python==4.0.1.23 tensorflow==1.13.1 coverage coveralls
 script:
   - cd tests && coverage run --source=../vtk/ -m nose2
-  - cd tests && coveralls
+  - coveralls
 notifications:
   slack:
     secure: n/zhlk8ILP4hG59NajxN0R4r+GfP/YXrmZS0UY37rhks24Qj7/DXxAApLiW3bAZA7aPkwWc1HEauZ0Vpj0BgA6gZGFhTkNZxg5ixIqhVaK5raQW5ZQ8KAzy3znhvNvHkGEBl0zwWj/WvPWoqtOJkJ0n0mGOVkQtNYYkkdo6YZWYpVI988Wr6xQJETEJPvVaD2/TWtymBVmwj5xWjJdVjnNeaDPeXKCGVl+Q+KpgEIoPuNL9hcGSEXmNRUhIwl/A+A727POtHVj0tnyf1Qu47x1VuxAi+2PjfAMhptqPM9oyWswn17jahJ8MS+1qS7xP04RpfZL2wMVrBgDijPibPxTW8rLp9lXA4n4mcol+4nYd4QoOa6xXfFOAywXi4+X1jrGXzRANvz8GuqgEB2p6mgvA8HNuo1yxtZxkmP57OU4GIsLQWADDQdtmlVdOoFhVEW7bTepac5pfWfSxeJONY7hS+J46KCEHodl4ACkX3fV3kDEdoQWFzU6RCYviRtSY3hiZmcV4K0PXhZMsPoCiAy0YQUMYpYtL9qjZ0+1tegx9AF0bKMUG+m2W6dDGwSwrT2ahESeTFAkWIXr9YNFR0y7AeAGZDJbQPT90HO/+yjZCH4exGYiKJVbwDMs09YVadURVMBPk9Gw1At+bhijFoOFGOCYZxHwyQT71hjvKnG0w=
