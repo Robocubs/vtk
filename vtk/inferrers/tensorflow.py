@@ -19,7 +19,7 @@ class TensorFlowInferrer(BaseInferrer):
                 tf.import_graph_def(self.graphdef, name="")
         super().__init__()
 
-    def prepare(self) -> None:
+    def prepare(self) -> None: #  pragma: no cover
         """
         Prepare the model for inference. This loads the model into memory, if not already completed.
         """
