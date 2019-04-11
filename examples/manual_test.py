@@ -1,6 +1,6 @@
-import tensorflow as tf
-import numpy as np
-import cv2, os, time
+import cv2
+import os
+import time
 from termcolor import cprint
 from vtk.inferrers.tensorflow import TensorFlowInferrer
 start = time.time()
@@ -10,7 +10,6 @@ status, frame = cv2.VideoCapture(0).read()
 cprint("[1/6] Loading graph into inference class...", "green", attrs=["bold"])
 inferrer = TensorFlowInferrer("tests/testdata/models/frozen_inference_graph.pb")
 cprint("[2/6] Preparing graph in memory...", "green", attrs=["bold"])
-inferrer.prepare()
 cprint("[3/6] Running inference on frame...", "green", attrs=["bold"])
 results = inferrer.run(frame)
 cprint("[4/6] Drawing on frame...", "green", attrs=["bold"])

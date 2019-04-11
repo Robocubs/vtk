@@ -2,21 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be1a411d-733b-4ac3-afc4-236511f0ff1c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/nvidia.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vtk/postprocessors/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vtk/postprocessors/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vtk/postprocessors/draw.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/nhubbard.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/nhubbard.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vtk.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vtk.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements-gpu.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_inferrer_tensorrt.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_inferrer_tensorrt.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_inferrer_tf.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_inferrer_tf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_preprocessor_cuda.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/manual_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/manual_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_inferrer_opencv.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_inferrer_opencv.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vtk/inferrers/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/vtk/inferrers/base.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vtk/inferrers/opencv.py" beforeDir="false" afterPath="$PROJECT_DIR$/vtk/inferrers/opencv.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vtk/inferrers/tensorflow.py" beforeDir="false" afterPath="$PROJECT_DIR$/vtk/inferrers/tensorflow.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vtk/inferrers/tensorrt.py" beforeDir="false" afterPath="$PROJECT_DIR$/vtk/inferrers/tensorrt.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vtk/preprocessors/cuda.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vtk/preprocessors/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/vtk/preprocessors/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vtk/preprocessors/generic.py" beforeDir="false" afterPath="$PROJECT_DIR$/vtk/preprocessors/generic.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +27,20 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vtk/postprocessors/draw.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="520">
+              <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -40,20 +55,23 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/vtk/preprocessors/generic.py" />
         <option value="$PROJECT_DIR$/tests/test_preprocessor_generic.py" />
         <option value="$PROJECT_DIR$/tests/test_preprocessor_cuda.py" />
-        <option value="$PROJECT_DIR$/tests/test_inferrer_opencv.py" />
-        <option value="$PROJECT_DIR$/vtk/preprocessors/base.py" />
-        <option value="$PROJECT_DIR$/vtk/inferrers/opencv.py" />
-        <option value="$PROJECT_DIR$/vtk/inferrers/base.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/requirements-gpu.txt" />
         <option value="$PROJECT_DIR$/vtk/preprocessors/cuda.py" />
-        <option value="$PROJECT_DIR$/vtk/inferrers/tensorflow.py" />
-        <option value="$PROJECT_DIR$/vtk/inferrers/tensorrt.py" />
         <option value="$PROJECT_DIR$/tests/test_inferrer_tf.py" />
         <option value="$PROJECT_DIR$/tests/test_inferrer_tensorrt.py" />
+        <option value="$PROJECT_DIR$/tests/manual_test.py" />
+        <option value="$PROJECT_DIR$/tests/test_inferrer_opencv.py" />
+        <option value="$PROJECT_DIR$/vtk/preprocessors/generic.py" />
+        <option value="$PROJECT_DIR$/vtk/inferrers/tensorrt.py" />
+        <option value="$PROJECT_DIR$/vtk/inferrers/tensorflow.py" />
+        <option value="$PROJECT_DIR$/vtk/inferrers/opencv.py" />
+        <option value="$PROJECT_DIR$/vtk/postprocessors/base.py" />
+        <option value="$PROJECT_DIR$/vtk/inferrers/base.py" />
+        <option value="$PROJECT_DIR$/vtk/preprocessors/base.py" />
+        <option value="$PROJECT_DIR$/vtk/postprocessors/draw.py" />
       </list>
     </option>
   </component>
@@ -69,18 +87,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="vtk" type="b2602c69:ProjectViewProjectNode" />
               <item name="vtk" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vtk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vtk" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="vtk" type="b2602c69:ProjectViewProjectNode" />
@@ -97,18 +109,31 @@
               <item name="vtk" type="b2602c69:ProjectViewProjectNode" />
               <item name="vtk" type="462c0819:PsiDirectoryNode" />
               <item name="vtk" type="462c0819:PsiDirectoryNode" />
+              <item name="postprocessors" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vtk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vtk" type="462c0819:PsiDirectoryNode" />
+              <item name="vtk" type="462c0819:PsiDirectoryNode" />
               <item name="preprocessors" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/examples" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -178,15 +203,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Run_Automatic_Tests - 2019.04.08 at 15h 49m 59s.xml">
-      <configuration name="Run Automatic Tests" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Run_Automatic_Tests - 2019.04.08 at 15h 50m 16s.xml">
-      <configuration name="Run Automatic Tests" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Run_Automatic_Tests - 2019.04.08 at 15h 50m 54s.xml">
-      <configuration name="Run Automatic Tests" configurationId="tests" />
-    </history-entry>
     <history-entry file="Run_Automatic_Tests - 2019.04.08 at 15h 52m 13s.xml">
       <configuration name="Run Automatic Tests" configurationId="tests" />
     </history-entry>
@@ -208,70 +224,41 @@
     <history-entry file="Run_Automatic_Tests - 2019.04.08 at 16h 00m 48s.xml">
       <configuration name="Run Automatic Tests" configurationId="tests" />
     </history-entry>
+    <history-entry file="Run_Automatic_Tests - 2019.04.11 at 11h 27m 28s.xml">
+      <configuration name="Run Automatic Tests" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Run_Automatic_Tests - 2019.04.11 at 11h 28m 56s.xml">
+      <configuration name="Run Automatic Tests" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Run_Automatic_Tests - 2019.04.11 at 12h 03m 08s.xml">
+      <configuration name="Run Automatic Tests" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
+    <frame x="0" y="15" width="1920" height="1064" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18344755" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18301688" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.40928724" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.40884575" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32901832" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.32901832" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tests/test_inferrer_opencv.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="44" lean-forward="true" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vtk/inferrers/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vtk/preprocessors/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vtk/preprocessors/generic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -279,63 +266,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements-gpu.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vtk/preprocessors/cuda.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_preprocessor_cuda.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="78" column="39" lean-forward="true" selection-start-line="78" selection-start-column="39" selection-end-line="78" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vtk/inferrers/opencv.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vtk/inferrers/tensorrt.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="48" lean-forward="true" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vtk/inferrers/tensorflow.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements-gpu.txt" />
+    <entry file="file://$PROJECT_DIR$/vtk/preprocessors/cuda.py" />
+    <entry file="file://$PROJECT_DIR$/tests/test_preprocessor_cuda.py" />
     <entry file="file://$PROJECT_DIR$/tests/test_inferrer_tf.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -362,6 +295,129 @@
           <caret line="16" column="44" lean-forward="true" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
           <folding>
             <element signature="e#0#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_inferrer_opencv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" lean-forward="true" selection-start-column="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="220">
+            <caret line="47" column="45" lean-forward="true" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/manual_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="55" lean-forward="true" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vtk/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vtk/preprocessors/generic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="40" lean-forward="true" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vtk/postprocessors/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vtk/inferrers/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vtk/inferrers/tensorrt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="25" column="41" lean-forward="true" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vtk/inferrers/tensorflow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" selection-start-line="29" selection-end-line="34" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vtk/inferrers/opencv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="43" column="29" lean-forward="true" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vtk/postprocessors/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="49" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vtk/preprocessors/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="48" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vtk/inferrers/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vtk/postprocessors/draw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>

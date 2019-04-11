@@ -1,3 +1,4 @@
+termcolor
 backports.shutil-get-terminal-size==1.0.0
 beautifulsoup4==4.6.3
 coverage==5.0a4

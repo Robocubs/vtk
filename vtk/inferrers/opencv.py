@@ -13,38 +13,42 @@ class OpenCVInferrer(BaseInferrer):
       * It does not run on the GPU (CPU only).
       * It requires building OpenCV from source with the DNN module.
       * It requires a graph descriptor file produced from the frozen inference graph.
-      * It does not provide detection class IDs or confidences, which can be used to determine the object type and how confident the network is in the result.
+      * It does not provide detection class IDs or confidences, which can be used to determine the object type and how
+        confident the network is in the result.
     It is only provided for the purposes of a fallback when TensorFlow does not work. Use at your own risk!
-
-    @param graph Path to frozen inference graph.
-    @param descriptor Path to descriptor file.
-    @param input_size Size of square image to provide to OpenCV.
     """
 
-    def __init__(self, graph: str, descriptor: str, input_size: int = 300):
+    def __init__(self, graph: str, descriptor: str, input_size: int = 300, threshold: float = 0.8):
+        """
+        Initialize a new instance of the graph.
+        :param graph: Path to graph file.
+        :param descriptor: Path to graph descriptor file produced from frozen graph.
+        :param input_size: Image input size from graph.
+        :param threshold: Threshold to determine whether a detection is important or not.
+        """
         self.graph = graph
         self.descriptor = descriptor
         self.input_size = input_size
+        self.threshold = threshold
         self.detections = []
-
-    def prepare(self) -> None:
-        """
-        Prepare the model for inference. This loads the model into memory, if not already completed.
-        """
         self.net = cv2.dnn.readNetFromTensorflow(self.graph, self.descriptor)
+        super().__init__()
 
-    def run(self, image: np.ndarray, threshold: float = 0.8) -> dict:
+    def run(self, image: np.ndarray) -> dict:
         """
-        Run inference on an image.
+        Run inference on a frame using the defined graph.
+        :param image: Image to run inference on.
+        :return: A dictionary with two elements: num_detections (length of detections list) and detections (dictionary
+            with class ID, score and bounding box coordinates for each detection). Class ID and score fields are None.
         """
         rows = image.shape[0]
         cols = image.shape[1]
         self.net.setInput(
             cv2.dnn.blobFromImage(image, size=(self.input_size, self.input_size), swapRB=True, crop=False))
-        self.outs = self.net.forward()
-        for detection in self.outs[0, 0, :, :]:
+        outs = self.net.forward()
+        for detection in outs[0, 0, :, :]:
             score = float(detection[2])
-            if score > threshold:
+            if score > self.threshold:
                 left = detection[3] * cols
                 top = detection[4] * rows
                 right = detection[5] * cols

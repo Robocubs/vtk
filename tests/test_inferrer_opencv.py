@@ -2,19 +2,16 @@ from vtk.inferrers.opencv import OpenCVInferrer
 import cv2
 import numpy as np
 import unittest
-import os
 
 
 def inference_helper(holder, image: np.ndarray):
     inferrer = OpenCVInferrer("testdata/models/frozen_inference_graph.pb", "testdata/models/cvgraph.pbtxt")
-    inferrer.prepare()
     result = inferrer.run(image)
     holder.assertGreaterEqual(result["num_detections"], 1)
 
 
 def inference_on_empty_image(holder):
     inferrer = OpenCVInferrer("testdata/models/frozen_inference_graph.pb", "testdata/models/cvgraph.pbtxt")
-    inferrer.prepare()
     with holder.assertRaises(cv2.error):
         inferrer.run(np.zeros((300, 300), dtype=int))
 
