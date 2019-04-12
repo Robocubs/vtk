@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be1a411d-733b-4ac3-afc4-236511f0ff1c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/test_postprocessor_draw.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vtk/postprocessors/draw.py" beforeDir="false" afterPath="$PROJECT_DIR$/vtk/postprocessors/draw.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,20 +11,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/test_postprocessor_draw.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="74" column="47" selection-start-line="74" selection-start-column="47" selection-end-line="74" selection-end-column="47" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -74,6 +59,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -91,17 +77,10 @@
               <item name="vtk" type="462c0819:PsiDirectoryNode" />
               <item name="vtk" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="vtk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vtk" type="462c0819:PsiDirectoryNode" />
-              <item name="vtk" type="462c0819:PsiDirectoryNode" />
-              <item name="postprocessors" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -183,12 +162,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Run_Automatic_Tests - 2019.04.08 at 15h 56m 25s.xml">
-      <configuration name="Run Automatic Tests" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Run_Automatic_Tests - 2019.04.08 at 15h 58m 18s.xml">
-      <configuration name="Run Automatic Tests" configurationId="tests" />
-    </history-entry>
     <history-entry file="Run_Automatic_Tests - 2019.04.08 at 15h 59m 32s.xml">
       <configuration name="Run Automatic Tests" configurationId="tests" />
     </history-entry>
@@ -213,17 +186,22 @@
     <history-entry file="Unittests_for_test_postprocessor_draw_DrawingPostprocessorTest - 2019.04.11 at 12h 38m 52s.xml">
       <configuration name="Unittests for test_postprocessor_draw.DrawingPostprocessorTest" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_for_test_postprocessor_draw_DrawingPostprocessorTest - 2019.04.11 at 12h 40m 35s.xml">
+      <configuration name="Unittests for test_postprocessor_draw.DrawingPostprocessorTest" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Run_Automatic_Tests - 2019.04.11 at 12h 41m 16s.xml">
+      <configuration name="Run Automatic Tests" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="15" width="1920" height="1064" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18301688" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18301688" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.40884575" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.40884575" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -401,8 +379,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_postprocessor_draw.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="74" column="47" selection-start-line="74" selection-start-column="47" selection-end-line="74" selection-end-column="47" />
+        <state relative-caret-position="493">
+          <caret line="61" column="50" lean-forward="true" selection-start-line="61" selection-start-column="50" selection-end-line="61" selection-end-column="50" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>

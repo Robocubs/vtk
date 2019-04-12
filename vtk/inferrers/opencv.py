@@ -1,4 +1,5 @@
 from .base import BaseInferrer
+from typing import Optional
 import numpy as np
 import cv2
 
@@ -18,7 +19,7 @@ class OpenCVInferrer(BaseInferrer):
     It is only provided for the purposes of a fallback when TensorFlow does not work. Use at your own risk!
     """
 
-    def __init__(self, graph: str, descriptor: str, input_size: int = 300, threshold: float = 0.8):
+    def __init__(self, graph: str, descriptor: str, input_size: Optional[int] = 300, threshold: Optional[float] = 0.8):
         """
         Initialize a new instance of the graph.
         :param graph: Path to graph file.
