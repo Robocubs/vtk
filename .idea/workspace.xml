@@ -2,7 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be1a411d-733b-4ac3-afc4-236511f0ff1c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/nhubbard.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/nhubbard.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/source/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/docs/source/conf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/source/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/source/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/source/modules.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/source/vtk.inferrers.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/source/vtk.postprocessors.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/source/vtk.preprocessors.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/source/vtk.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_preprocessor_generic.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_preprocessor_generic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vtk/preprocessors/generic.py" beforeDir="false" afterPath="$PROJECT_DIR$/vtk/preprocessors/generic.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +38,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tests/test_preprocessor_generic.py" />
         <option value="$PROJECT_DIR$/tests/test_preprocessor_cuda.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/requirements-gpu.txt" />
@@ -44,6 +55,8 @@
         <option value="$PROJECT_DIR$/vtk/preprocessors/base.py" />
         <option value="$PROJECT_DIR$/vtk/postprocessors/draw.py" />
         <option value="$PROJECT_DIR$/tests/test_postprocessor_draw.py" />
+        <option value="$PROJECT_DIR$/docs/source/index.rst" />
+        <option value="$PROJECT_DIR$/tests/test_preprocessor_generic.py" />
       </list>
     </option>
   </component>
@@ -70,12 +83,13 @@
             <path>
               <item name="vtk" type="b2602c69:ProjectViewProjectNode" />
               <item name="vtk" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="vtk" type="b2602c69:ProjectViewProjectNode" />
               <item name="vtk" type="462c0819:PsiDirectoryNode" />
-              <item name="vtk" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -106,7 +120,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Run Automatic Tests">
+  <component name="RunManager" selected="Python docs.Build Documentation">
     <configuration name="Run Manual Test" type="PythonConfigurationType" factoryName="Python">
       <module name="vtk" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -128,6 +142,22 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Build Documentation" type="docs" factoryName="Sphinx task">
+      <module name="vtk" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="docutils_input_file" value="$PROJECT_DIR$/source" />
+      <option name="docutils_output_file" value="$PROJECT_DIR$/build" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="html" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method v="2" />
+    </configuration>
     <configuration name="Run Automatic Tests" type="tests" factoryName="Nosetests">
       <module name="vtk" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -145,6 +175,7 @@
     </configuration>
     <list>
       <item itemvalue="Python.Run Manual Test" />
+      <item itemvalue="Python docs.Build Documentation" />
       <item itemvalue="Python tests.Run Automatic Tests" />
     </list>
   </component>
@@ -162,12 +193,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Run_Automatic_Tests - 2019.04.08 at 15h 59m 32s.xml">
-      <configuration name="Run Automatic Tests" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Run_Automatic_Tests - 2019.04.08 at 16h 00m 48s.xml">
-      <configuration name="Run Automatic Tests" configurationId="tests" />
-    </history-entry>
     <history-entry file="Run_Automatic_Tests - 2019.04.11 at 11h 27m 28s.xml">
       <configuration name="Run Automatic Tests" configurationId="tests" />
     </history-entry>
@@ -192,16 +217,22 @@
     <history-entry file="Run_Automatic_Tests - 2019.04.11 at 12h 41m 16s.xml">
       <configuration name="Run Automatic Tests" configurationId="tests" />
     </history-entry>
+    <history-entry file="Run_Automatic_Tests - 2019.04.16 at 21h 06m 45s.xml">
+      <configuration name="Run Automatic Tests" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Run_Automatic_Tests - 2019.04.16 at 21h 07m 38s.xml">
+      <configuration name="Run Automatic Tests" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="15" width="1920" height="1064" extended-state="6" />
+    <frame x="0" y="27" width="1680" height="1023" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18301688" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18297102" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.40884575" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.40868598" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -243,16 +274,6 @@
           <caret line="12" column="48" lean-forward="true" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_preprocessor_generic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="16" column="44" lean-forward="true" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#57#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -343,16 +364,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vtk/preprocessors/generic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="40" lean-forward="true" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vtk/postprocessors/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -386,6 +397,29 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_preprocessor_generic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="42" column="53" lean-forward="true" selection-start-line="42" selection-start-column="53" selection-end-line="42" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vtk/preprocessors/generic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/source/index.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
   </component>
 </project>

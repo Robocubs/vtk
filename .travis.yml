@@ -3,7 +3,6 @@ python:
 - '3.6'
 install:
 - pip install -r .travis-requirements.txt
-- pip install opencv-contrib-python==4.0.1.23 tensorflow==1.13.1 coverage coveralls
 script:
 - cd tests && coverage run --source=../vtk/ -m nose2
 - coveralls

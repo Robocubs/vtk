@@ -37,6 +37,7 @@
       <w>pbtxt</w>
       <w>pexpect</w>
       <w>pickleshare</w>
+      <w>postprocessors</w>
       <w>pred</w>
       <w>preproc</w>
       <w>ptyprocess</w>
@@ -45,6 +46,7 @@
       <w>pygments</w>
       <w>pypa</w>
       <w>pytest</w>
+      <w>quickstart</w>
       <w>relu</w>
       <w>resized</w>
       <w>robocubs</w>
@@ -60,6 +62,7 @@
       <w>termcolor</w>
       <w>testdata</w>
       <w>tftest</w>
+      <w>toctree</w>
       <w>traitlets</w>
       <w>twentyfive</w>
       <w>uint</w>

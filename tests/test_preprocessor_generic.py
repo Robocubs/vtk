@@ -12,8 +12,8 @@ def resize_helper(handle, name: str):
     """
     image = cv2.imread("testdata/originals/{name}.jpg".format(name=name), 1)
     resized = cv2.imread("testdata/resized/{name}.jpg".format(name=name), 1)
-    preproc = GenericPreprocessor(image)
-    resized_check = preproc.resize(300, 300)
+    preproc = GenericPreprocessor()
+    resized_check = preproc.resize(image, 300, 300)
     if resized.shape == resized_check.shape:
         # Mostly equal, but let's make sure...
         difference = cv2.subtract(resized, resized_check)
@@ -32,8 +32,8 @@ def recolor_helper(handle, name: str):
     """
     image = cv2.imread("testdata/originals/{name}.jpg".format(name=name), 1)
     recolored = cv2.imread("testdata/cvtcolor/{name}.jpg".format(name=name), 1)
-    preproc = GenericPreprocessor(image)
-    recolored_check = preproc.recolor(cv2.COLOR_RGB2BGR)
+    preproc = GenericPreprocessor()
+    recolored_check = preproc.recolor(image, cv2.COLOR_RGB2BGR)
     if recolored.shape == recolored_check.shape:
         # Mostly equal, but let's make sure...
         difference = cv2.subtract(recolored, recolored_check)

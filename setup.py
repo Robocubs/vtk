@@ -91,12 +91,11 @@ setup(
 	long_description=LONG_DESCRIPTION,
 	long_description_content_type="text/markdown",
 	author=AUTHOR,
-	author_email=AUTHOR_EMAIL,
+	author_email=EMAIL,
 	python_requires=REQUIRES_PYTHON,
 	url=URL,
 	packages=find_packages(exclude=["tests", "examples"]),
 	install_requires=REQUIRED,
-	extras_require=EXTRAS,
 	include_package_data=True,
 	license="MIT",
     classifiers=[
