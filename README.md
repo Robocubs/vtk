@@ -43,7 +43,7 @@ Of course you can! Follow the instructions below to work with VTK. This guide as
 You can safely skip to step 3 if you are running on an Nvidia Jetson, as it is included in the JetPack developer kit.
 
 <ol>
-	<li>Download the NVIDIA driver and CUDA **10.0** (this is important) from <a href="https://developer.nvidia.com/compute/cuda/10.0/Prod/local_installers/cuda-repo-ubuntu1804-10-0-local-10.0.130-410.48_1.0-1_amd64">this link</a>. Go eat a donut or something while it downloads.</li>
+	<li>Download the NVIDIA driver and CUDA <b>10.0</b> (this is important) from <a href="https://developer.nvidia.com/compute/cuda/10.0/Prod/local_installers/cuda-repo-ubuntu1804-10-0-local-10.0.130-410.48_1.0-1_amd64">this link</a>. Go eat a donut or something while it downloads.</li>
 	<li>Install the NVIDIA driver and CUDA onto your machine by issuing this sequence of commands:</li>
 	<ul>
 		<li><code>sudo apt update</code></li>

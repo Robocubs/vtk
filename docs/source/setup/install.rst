@@ -5,7 +5,7 @@ Installation
 
 *Photo by Brett Jordan on Unsplash*
 
-To install VTK, you need to have a few things prepared in advance.
+To install VTK, you need to have a few things prepared in advance. Mainly, you need Nvidia CUDA installed first; check the `README file <https://github.com/Robocubs/vtk/tree/master/README.md>`_ to see how to install it.
 
 OpenCV and TensorFlow are the essential dependencies of VTK. You have a few options here:
 
