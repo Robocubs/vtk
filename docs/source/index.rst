@@ -97,3 +97,5 @@ The Developer's Manual
 	:maxdepth: 3
 
 	modules/preprocessor
+	modules/inferrer
+	modules/postprocessor
