@@ -11,16 +11,16 @@ VTK is built in a set of modular components that follow a simple specification. 
 
 To try it out, after following the instructions in the Installation document, open a Python shell in your terminal with the ``python3`` command in the VTK folder, and try it out.::
 
-	>>> from vtk.inferrers.tensorflow import TensorFlowInferrer
-	>>> from vtk.postprocessors.draw import DrawingPostprocessor
-	>>> import cv2
-	>>> image = cv2.imread("tests/testdata/originals/ball_0.jpg")
-	>>> inferrer = TensorFlowInferrer("tests/testdata/models/frozen_inference_graph.pb")
-	>>> postprocessor = DrawingPostprocessor
-	>>> results = inferrer.run(image)
-	>>> output = postprocessor.run(image, results)
-	>>> cv2.imwrite("output.jpg", output)
-	>>> exit()
+   >>> from vtk.inferrers.tensorflow import TensorFlowInferrer
+   >>> from vtk.postprocessors.draw import DrawingPostprocessor
+   >>> import cv2
+   >>> image = cv2.imread("tests/testdata/originals/ball_0.jpg")
+   >>> inferrer = TensorFlowInferrer("tests/testdata/models/frozen_inference_graph.pb")
+   >>> postprocessor = DrawingPostprocessor
+   >>> results = inferrer.run(image)
+   >>> output = postprocessor.run(image, results)
+   >>> cv2.imwrite("output.jpg", output)
+   >>> exit()
 
 The new file created, ``output.jpg``, is the input image with the resulting detection boxes drawn on it.
 

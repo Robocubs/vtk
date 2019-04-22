@@ -2,75 +2,117 @@
   <dictionary name="nhubbard">
     <words>
       <w>alpena</w>
+      <w>autodoc</w>
       <w>backports</w>
       <w>beautifulsoup</w>
+      <w>builddir</w>
       <w>celerybeat</w>
+      <w>colorspace</w>
       <w>conv</w>
       <w>cssselect</w>
       <w>cuda</w>
       <w>cvgraph</w>
       <w>cvtcolor</w>
+      <w>dataset</w>
       <w>depthwise</w>
       <w>dilations</w>
       <w>dmypy</w>
+      <w>documentclass</w>
       <w>dtype</w>
+      <w>epub</w>
+      <w>errorlevel</w>
+      <w>filenames</w>
       <w>genutils</w>
+      <w>gettext</w>
+      <w>githubpages</w>
+      <w>graphdef</w>
       <w>hacky</w>
+      <w>howto</w>
+      <w>htbp</w>
       <w>htmlcov</w>
+      <w>htmlhelp</w>
+      <w>imread</w>
+      <w>imwrite</w>
       <w>inferrer</w>
       <w>inferrers</w>
       <w>infos</w>
       <w>ipynb</w>
       <w>jetson</w>
+      <w>kdoc</w>
+      <w>khai</w>
+      <w>letterpaper</w>
+      <w>localtoc</w>
+      <w>lublasser</w>
       <w>lxml</w>
       <w>mkdocs</w>
       <w>mobilenet</w>
+      <w>modelselect</w>
+      <w>moreau</w>
       <w>mypy</w>
       <w>ndarray</w>
-      <w>nhubbard</w>
       <w>nhwc</w>
       <w>noninfringement</w>
       <w>nosetests</w>
       <w>nvidia</w>
+      <w>onbrand</w>
       <w>opencv</w>
+      <w>papersize</w>
       <w>pathlib</w>
       <w>pbtxt</w>
       <w>pexpect</w>
+      <w>phee</w>
+      <w>philipp</w>
       <w>pickleshare</w>
+      <w>pointsize</w>
+      <w>popd</w>
       <w>postprocessors</w>
       <w>pred</w>
+      <w>premade</w>
       <w>preproc</w>
       <w>ptyprocess</w>
+      <w>pushd</w>
       <w>pycache</w>
       <w>pyenv</w>
       <w>pygments</w>
       <w>pypa</w>
       <w>pytest</w>
       <w>quickstart</w>
+      <w>readthedocs</w>
       <w>relu</w>
       <w>resized</w>
       <w>robocubs</w>
       <w>ropeproject</w>
       <w>scandir</w>
       <w>scrapy</w>
+      <w>searchbox</w>
       <w>shutil</w>
+      <w>sourcedir</w>
+      <w>sourcelink</w>
+      <w>sphinxbuild</w>
+      <w>sphinxopts</w>
       <w>spyder</w>
       <w>spyderproject</w>
       <w>spyproject</w>
       <w>tensorflow</w>
       <w>tensorrt</w>
-      <w>termcolor</w>
       <w>testdata</w>
+      <w>texinfo</w>
       <w>tftest</w>
+      <w>thresholding</w>
       <w>toctree</w>
       <w>traitlets</w>
       <w>twentyfive</w>
       <w>uint</w>
+      <w>unsplash</w>
       <w>unusability</w>
       <w>venv</w>
+      <w>viewcode</w>
+      <w>vtk's</w>
       <w>wcwidth</w>
       <w>webassets</w>
+      <w>webcam</w>
       <w>webencodings</w>
+      <w>wulfraat</w>
     </words>
   </dictionary>
 </component>

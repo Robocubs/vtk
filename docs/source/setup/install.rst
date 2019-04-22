@@ -20,30 +20,30 @@ To install the beginner's set of dependencies with VTK, follow the instructions 
 #. Install Python 3.6 (or newer) on your machine. **Do not use Python 2. It will not work and issues resulting from Python 2 will be closed as "won't fix".**
 #. Using the `virtualenv <https://virtualenv.pypa.io/en/latest/>`_ tool, which you can install in a terminal using the command ``pip install virtualenv``, create a new virtual environment:
 
-	* ``virtualenv -p python3 venv``
+   * ``virtualenv -p python3 venv``
 
 #. Activate this new virtual environment using the ``source`` command:
 
-	* ``source venv/bin/activate``
+   * ``source venv/bin/activate``
 
 #. Clone VTK from GitHub using the ``git`` command:
 
-	* ``git clone https://github.com/Robocubs/vtk``
+   * ``git clone https://github.com/Robocubs/vtk``
 
 #. Enter the VTK folder and install all required packages using the ``pip3`` command:
 
-	* ``cd vtk``
-	* ``pip3 install -r requirements.txt``
-	* **or** ``pip3 install -r .travis-requirements.txt`` if your computer does not have an NVIDIA GPU
+   * ``cd vtk``
+   * ``pip3 install -r requirements.txt``
+   * **or** ``pip3 install -r .travis-requirements.txt`` if your computer does not have an NVIDIA GPU
 
 #. Verify that the requirements have been correctly installed by running VTK's test suite:
 
-	* ``cd tests``
-	* ``coverage run --source=../vtk/ -m nose2``
-	* ``cd ..``
+   * ``cd tests``
+   * ``coverage run --source=../vtk/ -m nose2``
+   * ``cd ..``
 
 #. Finally, install VTK in your virtual environment using the below commands:
 
-	* ``python3 setup.py install``
+   * ``python3 setup.py install``
 
 Alright! Now, it's time to start using VTK in your project.

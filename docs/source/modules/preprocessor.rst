@@ -13,19 +13,19 @@ Documented below are the main methods of preprocessor classes.
 
 .. py:function:: resize(image, width, height)
 
-	Resize an image.
+   Resize an image.
 
-	:param np.ndarray image: The image object to resize.
-	:param int width: The width of the resulting image.
-	:param int height: The height of the resulting image.
-	:return: The resized image object.
-	:rtype: np.ndarray
+   :param np.ndarray image: The image object to resize.
+   :param int width: The width of the resulting image.
+   :param int height: The height of the resulting image.
+   :return: The resized image object.
+   :rtype: np.ndarray
 
 .. py:function:: recolor(image, colorspace)
-	
-	Change the color space of an image using OpenCV's color conversion methods.
+   
+   Change the color space of an image using OpenCV's color conversion methods.
 
-	:param np.ndarray image: Image to change color space of.
-	:param int colorspace: Color space to change image to. Comes from cv2.COLOR_* enum.
-	:return: The recolored image object.
-	:rtype: np.ndarray
+   :param np.ndarray image: Image to change color space of.
+   :param int colorspace: Color space to change image to. Comes from cv2.COLOR_* enum.
+   :return: The recolored image object.
+   :rtype: np.ndarray
