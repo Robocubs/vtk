@@ -12,7 +12,7 @@ VTK was created by Nicholas Hubbard, computer vision lead on Team 1701, The Robo
 
 ### What?
 
-VTK defines a common API for pre-processors, inferrers and (soon) post-processors for images to run through deep learning projects. We also provide tests to verify the functionality of these APIs and example programs to work with the API.
+VTK defines a common API for pre-processors, inferrers and post-processors for images to run through deep learning projects. We also provide tests to verify the functionality of these APIs and example programs to work with the API.
 
 ### When?
 
@@ -26,13 +26,13 @@ Your robot, hopefully! VTK can be used anywhere with an NVIDIA graphics card and
 
 Computer vision has always been a juggling act. You will eventually get lighting and distance calibrations right - until the lighting on the field changes. You will get the filtering algorithms used right - until you test it and the algorithm runs at extremely low frame rates, to the point of near unusability.
 
-Enter VTK. VTK makes it easy to use a previously unattainable vision goal - low-calibration deep learning - with just a change in the hardware platform you use. With VTK, deep learning algorithms can be used by anyone with an NVIDIA graphics card and some Python experience.
+Enter VTK. VTK makes it easy to use a previously unattainable vision goal - calibration-free object detection - with just a change in the hardware platform you use. With VTK, deep learning algorithms can be used by anyone with an NVIDIA graphics card and some Python experience.
 
 ### How?
 
 VTK is built on the TensorFlow Object Detection library, created by a generous team of Google researchers who created a modular platform for working with the thousands of object detection algorithm combinations.
 
-Atop this platform, VTK provides optimization libraries (such as TensorRT) and transformations (like GPU-optimized color space conversions and image resizing) for working with images for running inference on.
+Atop this platform, VTK provides optimization libraries (such as TensorRT) and transformations (like color space conversions and image resizing) for working with images for running inference on.
 
 ### Can I use it?
 
