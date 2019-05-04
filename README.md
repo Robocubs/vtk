@@ -61,8 +61,6 @@ You can safely skip to step 3 if you are running on an Nvidia Jetson, as it is i
 
 ##### Installing and Running VTK
 
-(Note: I haven't written a `setup.py` script yet, so you'll need to wait until that is complete to "install" VTK.)
-
 <ol>
 	<li>Install Git, if it isn't already installed:</li>
 	<ul>
@@ -86,6 +84,10 @@ You can safely skip to step 3 if you are running on an Nvidia Jetson, as it is i
 		<li><code>cd tests</code></li>
 		<li><code>coverage run --source=../vtk/ -m nose2</code></li>
 	</ul>
+	<li>If either one of these two tests pass, you can now install VTK:</li>
+	<ul>
+		<li><code>python3 setup.py install</code></li>
+	</ul>
 </ol>
 
-You're done! You can also use the `testing.py` script as inspiration for your own projects. File an issue if you are having problems on your device. I can help whenever necessary.
+You're done! You can also use the `testing.py` and various unit test scripts as inspiration for your own projects. File an issue if you are having problems on your device. I can help whenever necessary.
