@@ -3,6 +3,7 @@
 [![Build Status](https://travis-ci.com/Robocubs/vtk.svg?branch=master)](https://travis-ci.com/Robocubs/vtk)
 [![Coverage Status](https://coveralls.io/repos/github/Robocubs/vtk/badge.svg?branch=master)](https://coveralls.io/github/Robocubs/vtk?branch=master)
 [![Documentation Status](https://readthedocs.org/projects/vtk/badge/?version=latest)](https://vtk.readthedocs.io/en/latest/?badge=latest)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FRobocubs%2Fvtk.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FRobocubs%2Fvtk?ref=badge_shield)
 
 An easy-to-use vision toolkit for working with SSD and SSD-Lite TensorFlow Object Detection models.
 
@@ -91,3 +92,7 @@ You can safely skip to step 3 if you are running on an Nvidia Jetson, as it is i
 </ol>
 
 You're done! You can also use the `testing.py` and various unit test scripts as inspiration for your own projects. File an issue if you are having problems on your device. I can help whenever necessary.
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FRobocubs%2Fvtk.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FRobocubs%2Fvtk?ref=badge_large)
