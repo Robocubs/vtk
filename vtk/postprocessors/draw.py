@@ -21,7 +21,7 @@ class DrawingPostprocessor(BasePostprocessor):
         :return: Image with boxes drawn.
         """
         for i in inference["detections"]:
-            cv2.rectangle(image, (i["bbox"][0], i["bbox"][1]), (i["bbox"][2], i["bbox"][3]), (125, 125, 0), thickness=2)
+            cv2.rectangle(image, (int(i["bbox"][0]), int(i["bbox"][1])), (int(i["bbox"][2]), int(i["bbox"][3])), (125, 255, 51), 2)
         return image
 
     def close(self):  # pragma: no cover
