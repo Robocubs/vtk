@@ -17,7 +17,7 @@ pexpect==4.6.0
 pickleshare==0.7.5
 prompt-toolkit==1.0.15
 ptyprocess==0.6.0
-Pygments==2.3.1
+Pygments==2.7.4
 scandir==1.10.0
 simplegeneric==0.8.1
 six==1.11.0
