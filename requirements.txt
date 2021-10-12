@@ -11,7 +11,7 @@ ipython-genutils==0.2.0
 lxml==4.2.5
 nose2==0.9.1
 numpy==1.15.1
-opencv-contrib-python==4.1.0.25
+opencv-contrib-python==4.1.1.26
 pathlib2==2.3.3
 pexpect==4.6.0
 pickleshare==0.7.5
